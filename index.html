@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
     <!-- Header -->
-    <div id="header">
+    <div id="header" class="centered">
         <h1 id="headerTitle">Temperature Converter</h1>
     </div>
 
     <!-- Content -->
-    <div id="content">
+    <div id="content" class="centered">
 
+        <div id="form">
+            Enter Temperature: <span></span>
+            <input type="number" name="celsius" id="tempCelcius">&#176;C
+            <input class="button" type="button" value="CONVERT">
+        </div>
 
-
-
+        <div id="message">
+            The Temperature entered <span class="degree degree-red" id="degCelcius">0</span>&#176;C is <span class="degree degree-green" id="degFahr">0</span>&#176;F
+        </div>
 
 
     </div>
 
     <!-- Footer -->
-    <div id="footer">
+    <div id="footer" class="centered">
         <p>Copyright &copy; 2021 BRAD Tech</p>
     </div>
 
